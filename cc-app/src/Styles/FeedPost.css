@@ -1,0 +1,22 @@
+.post__box
+{
+    background-color: #eceff4;
+    min-height: 100px;
+    margin-bottom: 20px;
+
+    border: 4px solid #dca493;
+    border-radius: 30px;
+
+}
+.post__content
+{
+    color: #c36346;
+    padding: 10px;
+    
+    text-align: left;
+}
+
+.post__content > h3
+{
+    margin: 0;
+}

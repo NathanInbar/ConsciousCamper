@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import FireplaceRoundedIcon from '@material-ui/icons/FireplaceRounded';
-import logo from '../assets/cc.png';
+import Streetview from 'react-google-streetview';
+import Autocomplete from 'react-google-autocomplete';
 import '../Styles/mainContainer.css';
 
 function MainContainer() {
@@ -16,12 +17,17 @@ function MainContainer() {
             </div>
 
             <div className="search__container">
-                <input placeholder="Search" id="searchTextField" />
+                {/*<input placeholder="Search" id="searchTextField" />*/}
+                <Autocomplete
+                    apiKey="AIzaSyDOPCiF4znZiSiBibkiD70UfVa41OHgojQ"
+                />
             </div>
 
             <div className="streetView__container">
                 <div className="streetView__container__content">
-                    
+                    <Streetview
+                        apiKey="AIzaSyDOPCiF4znZiSiBibkiD70UfVa41OHgojQ" 
+                    />
                 </div>
             </div>
 

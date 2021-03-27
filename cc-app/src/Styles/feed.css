@@ -1,0 +1,22 @@
+.feed__container
+{
+    margin: 20px;
+    margin-top: 0;
+}
+
+.feed__header
+{
+    text-align: center;
+    font-family: 'LeavesAndGround';
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #eceff4;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    margin-top: 30px;
+}
+.feed__header > h2 {
+    margin: 0;
+}
