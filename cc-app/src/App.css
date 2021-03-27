@@ -1,0 +1,36 @@
+body
+{
+  background-image: url('./assets/bkg.png');
+}
+
+.main__app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  /* both sides add as much margin as possible on the left and right, centering the content */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__left
+{
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+}
+.main__right
+{
+  flex: 0.3;
+  border: 4px dashed black;
+}
+
+.main__left__container
+{
+  flex: 0.7;
+  border: 4px dashed black;
+}
+.main__left__juicebox
+{
+  flex: 0.3;
+  border: 4px dashed black;
+}
