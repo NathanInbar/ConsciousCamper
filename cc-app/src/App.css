@@ -1,6 +1,11 @@
 body
 {
   background-image: url('./assets/bkg.png');
+  background-size: 100% 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  --main-background: #eceff4;
 }
 
 .main__app {
@@ -10,6 +15,7 @@ body
   /* both sides add as much margin as possible on the left and right, centering the content */
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .main__left
@@ -21,16 +27,16 @@ body
 .main__right
 {
   flex: 0.3;
-  border: 4px dashed black;
+  background-color: salmon;
 }
 
 .main__left__container
 {
   flex: 0.7;
-  border: 4px dashed black;
+  background-color: rgba(236, 239, 244, 0.9);
 }
 .main__left__juicebox
 {
   flex: 0.3;
-  border: 4px dashed black;
+  background-color: royalblue;
 }

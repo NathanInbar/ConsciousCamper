@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import Juicer from './Juicer';
 
 function JuiceBox() {
     
     return (
         <div className="juicebox">
-            <h4>juicebox</h4>
+            <Juicer/>
         </div>
     );
 }
