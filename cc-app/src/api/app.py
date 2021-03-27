@@ -7,11 +7,10 @@ import cv2
 
 app = Flask(__name__)
 
-campsites_model = load('../campsites_model.joblib')
+# campsites_model = load('../campsites_model.joblib')
 
-@app.route('/score', methods=['GET, POST'])
+@app.route('/score', methods=['POST'])
 def score():
-    if request.method == 'GET':
-        return
     loc_details = request.get_json();
     print("location details: ", loc_details);
+    return "all good", 200;
