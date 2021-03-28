@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Juicer from './Juicer';
+import DoubleJuicer from './DoubleJuicer';
 
 import FilterDramaIcon from '@material-ui/icons/FilterDrama';
 import OpacityRoundedIcon from '@material-ui/icons/OpacityRounded';
+import AcUnitIcon from '@material-ui/icons/AcUnit';
+import WhatshotIcon from '@material-ui/icons/Whatshot';
 
 import '../Styles/Juicebox.css';
 import SelectInput from '@material-ui/core/Select/SelectInput';
@@ -76,12 +79,36 @@ function JuiceBox({options, setOptions}) {
             data={handpicked.description}
             />
 
+            <DoubleJuicer 
+            metric_icon1={<AcUnitIcon className="juicer__image"/>}
+            metric_name1="Low Temp."
+            data1={parseInt(handpicked.low_temperature) + "°F"}
+            metric_icon2={<WhatshotIcon className="juicer__image"/>}
+            metric_name2="High Temp."
+            data2={parseInt(handpicked.high_temperature) + "°F"}
+            />
+
             <Juicer
             metric_icon={<OpacityRoundedIcon className="juicer__image"/>}
             metric_name="Chance of Rain"
             data={parseInt(handpicked.precipitation * 100) + '%'}
             />
 
+            <DoubleJuicer 
+            metric_icon1={<AcUnitIcon className="juicer__image"/>}
+            metric_name1="Low Temp."
+            data1={parseInt(handpicked.low_temperature) + "°F"}
+            metric_icon2={<WhatshotIcon className="juicer__image"/>}
+            metric_name2="High Temp."
+            data2={parseInt(handpicked.high_temperature) + "°F"}
+            />
+
+            <Juicer
+            metric_icon={<OpacityRoundedIcon className="juicer__image"/>}
+            metric_name="Chance of Rain"
+            data={parseInt(handpicked.precipitation * 100) + '%'}
+            />
+   {/*     
             <Juicer
             metric_icon={<FilterDramaIcon className="juicer__image"/>}
             metric_name="Low Temperature"
@@ -93,13 +120,17 @@ function JuiceBox({options, setOptions}) {
             metric_name="High Temperature"
             data={parseInt(handpicked.high_temperature) + "°F"}
             />
+            
+
+        */}
 
             <Juicer
             metric_icon={<FilterDramaIcon className="juicer__image"/>}
             metric_name="Humidity"
             data={handpicked.humidity + '%'}
             />
-            
+
+
         </div>
     );
 }
