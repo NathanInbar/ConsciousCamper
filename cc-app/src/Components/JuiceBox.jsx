@@ -79,7 +79,7 @@ function JuiceBox({options, setOptions}) {
             <Juicer
             metric_icon={<OpacityRoundedIcon className="juicer__image"/>}
             metric_name="Chance of Rain"
-            data={handpicked.precipitation + '%'}
+            data={parseInt(handpicked.precipitation * 100) + '%'}
             />
 
             <Juicer
