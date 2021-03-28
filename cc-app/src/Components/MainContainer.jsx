@@ -48,6 +48,11 @@ function MainContainer({options, setOptions}) {
                         streetViewPanoramaOptions={options} 
                     />
                 </div>
+                <div className="campfire__container">
+                    <h3>Camp Score</h3>
+                    <img src={logo} alt=""/>
+                    <h3>58</h3>
+                </div>
             </div>
 
         </div>
