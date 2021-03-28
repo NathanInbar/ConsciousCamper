@@ -34,7 +34,7 @@ function Feed (){
             <FeedPost
                 image = "https://scontent-lax3-1.cdninstagram.com/v/t51.2885-15/e35/166051864_1192498467848401_2173716274161860231_n.jpg?tp=1&_nc_ht=scontent-lax3-1.cdninstagram.com&_nc_cat=101&_nc_ohc=qY1PwaYYxecAX_E1xiY&ccb=7-4&oh=c6eb9918469fa729cf84ad22e5703908&oe=608AFBE7&_nc_sid=4f375e"
                 link = "https://www.instagram.com/p/CM8sRZcBaGs/"
-                text = "Over nine million people die every year as a direct or indirect result of the pollution. Helping the Earth also helps us!"
+                text = "Over nine million people die every year as a direct or indirect result of pollution. Helping the Earth also helps us!"
                 location = "Moab, Utah"
             />
 
