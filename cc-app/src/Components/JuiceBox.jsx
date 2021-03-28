@@ -11,11 +11,11 @@ import '../Styles/Juicebox.css';
 import SelectInput from '@material-ui/core/Select/SelectInput';
 import { wait } from '@testing-library/dom';
 
-function JuiceBox({options, setOptions}) {
+function JuiceBox({options, setOptions, handpicked, setHandpicked}) {
     
     const [apiWeatherData, setApiWeatherData] = useState({});
     const [aqiData, setAQIData] = useState({});
-    const [handpicked, setHandpicked] = useState({});
+    
 
 
     const WEATHER_API_KEY = "27b47fdc58d927867be7869529c0811a";

@@ -4,7 +4,9 @@ import Streetview from 'react-google-streetview';
 import Autocomplete from 'react-google-autocomplete';
 import '../Styles/mainContainer.css';
 import logo from '../assets/cc_logo.png';
-function MainContainer({options, setOptions}) {
+function MainContainer({options, setOptions, handpicked, setHandpicked}) {
+
+    const [campScore, setCampScore] = useState(50);
 
     function clicked(place)
     {
@@ -12,9 +14,29 @@ function MainContainer({options, setOptions}) {
         setOptions({position:{ lat: pos.lat(), lng: pos.lng() }});
     }
 
-    useState(() => {
-        
+    useEffect(() => {
     }, [options]);
+
+    useEffect(() =>{
+        getScore();
+    }, [handpicked])
+
+
+
+    async function getScore(){
+        console.log("getting score");
+        const location_data = handpicked;
+        const response = await fetch('/score', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(location_data)
+        });
+        if(response.ok){
+            response.json().then(data => setCampScore(parseInt(data['camp-score'])));
+        }
+    }
 
 
     return (
@@ -51,7 +73,7 @@ function MainContainer({options, setOptions}) {
                 <div className="campfire__container">
                     <h3>Camp Score</h3>
                     <img src={logo} alt=""/>
-                    <h3>58</h3>
+                    <h3>{campScore}</h3>
                 </div>
             </div>
 
