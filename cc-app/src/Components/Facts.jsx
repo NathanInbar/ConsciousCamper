@@ -12,27 +12,27 @@ function Facts ()
     }, [])
 
     const facts = [
-    "Plastic is made from petroleum oil, which is not sustainable. Petroleum Oil Can Not Be Renewed or Reused.",
-    "It Takes Approximately 22 gallons of water to produce a pound of plastic.",  
-    "Plastic Takes At Least 450 Years to Decompose Which is Not Safe to Begin With.",
-    "Air Pollution badly damages the ozone layer. Increases the Chances of Having Skin Cancer.",
-    "Sea Turtles Breathe in Oil Once Covered or Near Oil When They Go Up to the Surface",
-    "A Single Tree can Absorb More than 10 Pounds of CO2 Each Year.",
-    "Paper can be Recycled Up to 7 Times."
+        "Plastic is made from petroleum oil, which is not sustainable.",
+        "It takes approximately 22 gallons of water to produce a pound of plastic.",  
+        "Plastic takes at least 450 years to decompose which is not safe to begin with.",
+        "Air pollution badly damages the ozone layer. increases the chances of having skin cancer.",
+        "Sea turtles breathe in oil once covered or near oil when they go up to the surface.",
+        "A single tree can absorb more than 10 pounds of co2 each year.",
+        "Paper can be recycled up to 7 times."
     ];
 
     const tips = [
-        "Try Some Straw Alternatives Instead of Plastic Straws. Examples include Paper & Metal Straws.",
-        "Use Refillable Water Bottles to Decrease the Amount of Single-Use Plastic ",
-        "Bike or Carpool to Reduce the Amount of Gas and Carbon Emission",
-        "Clean Up After Yourselves! The wildlife will thank you!",
-        "Do Not Feed the Wildlife (This Will Cause the Animals to be More Dependent)",
-        "Use Totes or Picnic Baskets over Plastic Bags to do your part",
-        "Do Not Litter Cigarettes After Using Them (1. Can Pollute the Land/Ocean 2. Higher Chance of Starting a Fire)",
-        "Stay Away from Cutting Trees For Campfires (Slowly Deforesting the Forest and Wrecking Habits for Certain Types of Animals)",
-        "Parents/Guardians Can Use Their Imaginations to Create Games for their Child/Children to Clean Up",
-        "Try to Conserve Water (There is Less than 1% of Fresh Water on Planet Earth)",
-        "Avoid Using Charcoal. Other Alternatives Could Be Wood, Newspaper, etc."
+        "Try some straw alternatives instead of plastic straws.",
+        "Use refillable water bottles to decrease the amount of single-use plastic.",
+        "Bike or carpool to reduce the amount of gas and carbon emission.",
+        "Clean up after yourselves! the wildlife will thank you!",
+        "Do not feed the wildlife (this will cause the animals to be more dependent)",
+        "Use totes or picnic baskets over plastic bags to do your part",
+        "Do not litter cigarettes.",
+        "Stay away from cutting trees for campfires",
+        "Parents/guardians can use their imaginations to create games for their child/children to clean up",
+        "Try to conserve water (there is less than 1% of fresh water on planet earth)",
+        "Avoid using charcoal. other alternatives could be wood, newspaper, etc."
     ];
 
     function getRandomFact(){
