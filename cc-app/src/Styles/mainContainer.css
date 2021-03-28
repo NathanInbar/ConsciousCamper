@@ -53,5 +53,13 @@
 {
     width: 600px;
     height: 400px;
-    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.search__container__search
+{
+    border: 4px dashed #a3be8c;
+    border-radius: 30px;
 }
