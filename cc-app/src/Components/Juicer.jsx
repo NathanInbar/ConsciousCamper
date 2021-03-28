@@ -1,17 +1,17 @@
 import React from 'react';
-import FilterDramaIcon from '@material-ui/icons/FilterDrama';
+import '../Styles/Juicer.css';
 
-function Juicer() {
+function Juicer({metric_icon, metric_name, metric_text}) {
     
     return (
         <div className="juicer__container">
-            <div className="juicer__image">
-                <FilterDramaIcon/>
+            <div className="juicer__image__container">
+                {metric_icon}
             </div>
 
             <div className="juicer__text">
-                <p>Precipitation</p>
-                <p>70</p>
+                <p>{metric_name}</p>
+                <p>{metric_text}</p>
             </div>
         </div>
     );

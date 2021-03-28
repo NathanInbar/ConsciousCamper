@@ -1,6 +1,7 @@
 .fireplace__icon
 {
-    font-size: 80px;
+    font-size: 80px !important;
+    color: #d08770;
 }
 
 .logo__text
@@ -9,6 +10,8 @@
     margin-top: 5px;
     font-family: 'LeavesAndGround';
     font-size: 70px;
+    color: #a3be8c;
+    text-shadow: -1px 1px 0 #455b33;
 }
 
 .logo__container
@@ -16,6 +19,7 @@
     display: flex;
     flex-direction: row;
     max-height: 100px;
+    border-bottom: 2px dashed white;
 }
 
 .search__container

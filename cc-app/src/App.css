@@ -23,20 +23,24 @@ body
   display: flex;
   flex-direction: column;
   flex: 0.7;
+  border-left: 2px solid white;
 }
 .main__right
 {
   flex: 0.3;
-  background-color: salmon;
+  background-color: rgba(208, 135, 112, 0.95);
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 
 .main__left__container
 {
   flex: 0.7;
-  background-color: rgba(236, 239, 244, 0.9);
+  background-color: rgba(236, 239, 244, 0.95);
+  border-bottom: 2px solid white;
 }
 .main__left__juicebox
 {
   flex: 0.3;
-  background-color: royalblue;
+  background-color: rgba(163, 190, 140, 0.95);
 }
