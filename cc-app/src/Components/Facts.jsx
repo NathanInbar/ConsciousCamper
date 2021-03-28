@@ -64,7 +64,7 @@ function Facts ()
     return (
         <div className="facts__container">
             <div>
-                <h5>{fact.aidx == 0 ? "Did You Know?" : "Sustainability Tip"}</h5>
+                <h5>{fact.aidx == 0 ? "Did You Know?" : "Sustainability Tip:"}</h5>
                 <p>{fact.text}</p>
             </div>
         </div>
