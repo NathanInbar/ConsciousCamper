@@ -9,7 +9,7 @@ import Facts from './Components/Facts';
 import './App.css';
 
 function App() {
-  const[options, setOptions] = useState({position:{ lat: 34.3260653, lng: -117.8325833 }});
+  const[options, setOptions] = useState({position:{ lat: 34.3260653, lng: -117.8325833 }, pov: {heading: 195, pitch:-5}});
   const [handpicked, setHandpicked] = useState({});
   return (
     <div className="main__app">
@@ -38,7 +38,10 @@ function App() {
       </div>
 
       <div className="main__right"> {/*Main right contains feed*/}
-        <Feed/>
+        <Feed
+          options={options}
+          setOptions={setOptions}
+        />
       </div>
 
     </div>
