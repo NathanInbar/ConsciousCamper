@@ -33,7 +33,7 @@
 .search__container
 {
     padding-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .search__container > input
@@ -53,7 +53,9 @@
 {
     width: 600px;
     height: 400px;
-    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 18px;
 }
 
 .search__container__search
