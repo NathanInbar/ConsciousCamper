@@ -99,7 +99,8 @@ function JuiceBox({options, setOptions}) {
             metric_name="Humidity"
             data={handpicked.humidity + '%'}
             />
-            
+
+
         </div>
     );
 }
