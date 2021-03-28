@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import '../Styles/FeedPost.css';
 
-function FeedPost ({text}){
+function FeedPost ({image, link, text, location}){
     
     return(
-        <div className="post__box">
-            <div className="post__content">
-                <h3>{text}</h3>
+        <a href={link} target="_blank">
+            <div className="post__box">
+                <div className="post__content">
+                    <img src={image} alt=""/>
+                    <div>
+                        <p>{text}</p>
+                        <h4 className="post__location">{location}</h4>
+                    </div>
+                </div>
             </div>
-        </div>
+        </a>
     );
 
 }

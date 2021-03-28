@@ -1,0 +1,34 @@
+.facts__container
+{
+    
+    background-color: #ECEFF4;
+    color: #81A1C1;
+    border: 5px solid #81A1C1;
+    width: 600px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+.facts__container > div
+{
+    margin-left: 25px;
+    margin-top: 5px;
+    max-width: 565px;
+    max-height: 70px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+.facts__container > div > h5
+{
+    margin: 0;
+    text-decoration: underline;
+    color: #698fb5;
+}
+.facts__container > div > p
+{
+    font-weight: 630;
+    margin: 0;
+    font-size: 20px;
+}

@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import MainContainer from './Components/MainContainer';
 import JuiceBox from './Components/JuiceBox';
 import Feed from './Components/Feed';
+import Facts from './Components/Facts';
 
 import './App.css';
 
@@ -13,7 +14,7 @@ function App() {
 
         <div className="main__left__container"> {/*Main left container contains logo/name / streetview/facts */}
           <MainContainer />
-        
+          <Facts />
         </div>
 
         <div className="main__left__juicebox"> {/*Main left juicebox contains juice*/}

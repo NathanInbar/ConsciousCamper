@@ -10,13 +10,42 @@
 }
 .post__content
 {
+    display: flex;
+    flex-direction: row;
     color: #c36346;
     padding: 10px;
-    
     text-align: left;
+    max-height: 180px;
+    overflow: hidden;
 }
 
-.post__content > h3
+.post__content > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.post__content > img
+{
+    width: 160px;
+    height: 160px;
+    border: 2px solid #dca493;
+    border-radius: 30px;
+}
+.post__content > div > p
+{
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.post__location
 {
     margin: 0;
+    margin-left: 10px;
+}
+
+a
+{
+    text-decoration: none;
 }

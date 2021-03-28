@@ -1,17 +1,25 @@
 .fireplace__icon
 {
-    font-size: 80px !important;
-    color: #d08770;
+    width: 100px;
+    height: 90px;
+    margin-left: 5px;
+    margin-top: 5px;
+    opacity: 0;
 }
 
 .logo__text
 {
+    align-self: center;
     margin: 0;
     margin-top: 5px;
+    margin-left: 61px;
+    margin-right: auto;
     font-family: 'LeavesAndGround';
-    font-size: 70px;
+    font-size: 125px;
     color: #a3be8c;
     text-shadow: -1px 1px 0 #455b33;
+    letter-spacing: 2px;
+    font-weight: 200;
 }
 
 .logo__container
@@ -25,7 +33,7 @@
 .search__container
 {
     padding-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .search__container > input

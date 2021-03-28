@@ -8,14 +8,17 @@
 {
     text-align: center;
     font-family: 'LeavesAndGround';
-    font-size: 30px;
+    font-size: 22px;
+    font-weight: 100;
     letter-spacing: 2px;
+    text-shadow: -1px 1px 0 #000;
     color: #eceff4;
     text-decoration: underline;
     text-decoration-style: dashed;
     text-decoration-thickness: 3px;
     text-underline-offset: 2px;
-    margin-top: 30px;
+    margin-top: 70px;
+    margin-bottom: 25px;
 }
 .feed__header > h2 {
     margin: 0;
