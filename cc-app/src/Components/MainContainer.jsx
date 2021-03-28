@@ -4,17 +4,16 @@ import Streetview from 'react-google-streetview';
 import Autocomplete from 'react-google-autocomplete';
 import '../Styles/mainContainer.css';
 
-function MainContainer() {
-    const[options, setOptions] = useState({position:{ lat: 34.3260653, lng: -117.8325833 }});
+function MainContainer({options, setOptions}) {
 
     function clicked(place)
     {
         let pos = place.geometry.location;
-
         setOptions({position:{ lat: pos.lat(), lng: pos.lng() }});
     }
 
     useState(() => {
+        
     }, [options]);
 
 
