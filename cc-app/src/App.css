@@ -47,3 +47,13 @@ body
   max-height: 302px;
   overflow:hidden;
 }
+
+.donation__link
+{
+  position: absolute;
+  top: 945px;
+  left: 1320px !important;
+  color: #698fb5;
+  text-decoration: underline;
+  text-shadow: -1px 1px #fff;
+}

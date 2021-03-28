@@ -23,6 +23,7 @@ function App() {
             setHandpicked={setHandpicked}
           />
           <Facts />
+          <a href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2104OQ18299A01180RX" target="_blank" className="donation__link"><h3>Donate to the Worldwide Wildlife Fund </h3></a>
         </div>
 
         <div className="main__left__juicebox"> {/*Main left juicebox contains juice*/}
