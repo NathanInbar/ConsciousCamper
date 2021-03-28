@@ -4,9 +4,10 @@
     flex-direction: column;
     background-color: #97b67c;
     color: #eceff4;
-    border: 4px solid #b6cca4;
+    border: 4px solid #769B59;
     border-radius: 30px;
     text-align: center;
+
 
     padding: 20px;
     margin-top: 10px;
@@ -21,7 +22,7 @@
     justify-content: space-around;
     background-color: #97b67c;
     color: #eceff4;
-    border: 4px solid #b6cca4;
+    border: 4px solid #769B59;
     border-radius: 30px;
     text-align: center;
 
