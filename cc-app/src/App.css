@@ -42,4 +42,6 @@ body
 {
   flex: 0.3;
   background-color: rgba(163, 190, 140, 0.95);
+  max-height: 302px;
+  overflow:hidden;
 }
