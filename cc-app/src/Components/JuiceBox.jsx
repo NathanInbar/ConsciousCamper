@@ -67,12 +67,14 @@ function JuiceBox({options, setOptions, handpicked, setHandpicked}) {
 
     function getAQIData(){
         let aqi = aqiData.list[0].main.aqi;
+        console.log('aqi: ', aqi);
         return aqi;
     }
     // 
     
     return (
         <div className="juicebox">
+
             <Juicer
             metric_icon={<FilterDramaIcon className="juicer__image"/>}
             metric_name="Weather"
@@ -86,48 +88,36 @@ function JuiceBox({options, setOptions, handpicked, setHandpicked}) {
             metric_icon2={<WhatshotIcon className="juicer__image"/>}
             metric_name2="High Temp."
             data2={parseInt(handpicked.high_temperature) + "°F"}
-            />
-
-            <Juicer
-            metric_icon={<OpacityRoundedIcon className="juicer__image"/>}
-            metric_name="Chance of Rain"
-            data={parseInt(handpicked.precipitation * 100) + '%'}
-            />
+            />        
 
             <DoubleJuicer 
             metric_icon1={<AcUnitIcon className="juicer__image"/>}
-            metric_name1="Low Temp."
-            data1={parseInt(handpicked.low_temperature) + "°F"}
+            metric_name1="Chance of Rain"
+            data1={parseInt(handpicked.precipitation*100) + "%"}
             metric_icon2={<WhatshotIcon className="juicer__image"/>}
-            metric_name2="High Temp."
-            data2={parseInt(handpicked.high_temperature) + "°F"}
+            metric_name2="Humidity"
+            data2={handpicked.humidity + "%"}
+            />    
+
+            <DoubleJuicer 
+            metric_icon1={<AcUnitIcon className="juicer__image"/>}
+            metric_name1="Air Quality"
+            data1={handpicked.AQI * 10}
+            metric_icon2={<WhatshotIcon className="juicer__image"/>}
+            metric_name2="UV"
+            data2={handpicked.UV}
             />
 
             <Juicer
             metric_icon={<OpacityRoundedIcon className="juicer__image"/>}
-            metric_name="Chance of Rain"
-            data={parseInt(handpicked.precipitation * 100) + '%'}
+            metric_name="Wind Speed"
+            data={handpicked.windvelocity + " m/s"}
             />
-   {/*     
-            <Juicer
-            metric_icon={<FilterDramaIcon className="juicer__image"/>}
-            metric_name="Low Temperature"
-            data={parseInt(handpicked.low_temperature) + "°F"}
-            />
-
-            <Juicer
-            metric_icon={<OpacityRoundedIcon className="juicer__image"/>}
-            metric_name="High Temperature"
-            data={parseInt(handpicked.high_temperature) + "°F"}
-            />
-            
-
-        */}
 
             <Juicer
             metric_icon={<FilterDramaIcon className="juicer__image"/>}
-            metric_name="Humidity"
-            data={handpicked.humidity + '%'}
+            metric_name="Sunrise"
+            data={handpicked.sunrise}
             />
 
 
