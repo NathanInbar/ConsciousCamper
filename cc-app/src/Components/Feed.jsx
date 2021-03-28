@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import FeedPost from './FeedPost';
-import '../Styles/Feed.css'
+import '../Styles/Feed.css';
 
 function Feed (){
     
