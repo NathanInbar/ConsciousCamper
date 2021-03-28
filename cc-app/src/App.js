@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   const[options, setOptions] = useState({position:{ lat: 34.3260653, lng: -117.8325833 }});
-
+  const [handpicked, setHandpicked] = useState({});
   return (
     <div className="main__app">
       <div className="main__left"> {/*Main left contains mainContainer and juicebox*/}
@@ -19,7 +19,8 @@ function App() {
           <MainContainer
             options={options}
             setOptions={setOptions}
-
+            handpicked={handpicked}
+            setHandpicked={setHandpicked}
           />
           <Facts />
         </div>
@@ -28,6 +29,8 @@ function App() {
           <JuiceBox
             options={options}
             setOptions={setOptions}
+            handpicked={handpicked}
+            setHandpicked={setHandpicked}
 
           />
         </div>
