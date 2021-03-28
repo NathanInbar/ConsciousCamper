@@ -116,8 +116,10 @@ function JuiceBox({options, setOptions, handpicked, setHandpicked}) {
 
             <Juicer
             metric_icon={<FilterDramaIcon className="juicer__image"/>}
-            metric_name="Sunrise"
+            metric_name="Sunrise / Sunset"
             data={handpicked.sunrise}
+            vertJuicer={true}
+            vertJuicerText={handpicked.sunset}
             />
 
 

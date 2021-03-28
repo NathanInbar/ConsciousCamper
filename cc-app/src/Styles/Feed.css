@@ -12,7 +12,6 @@
     font-weight: 100;
     letter-spacing: 2px;
     text-shadow: -1px 1px 0 #000;
-    color: #eceff4;
     text-decoration: underline;
     text-decoration-style: dashed;
     text-decoration-thickness: 3px;
@@ -22,4 +21,15 @@
 }
 .feed__header > h2 {
     margin: 0;
+}
+
+a
+{
+    color: #eceff4;
+    
+}
+
+a > h2 > span
+{
+    color: #81A1C1;
 }

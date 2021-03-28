@@ -8,7 +8,7 @@ function Feed (){
         <div className="feed__container">
             
             <div className="feed__header">
-                <h2>@conscious_camper Instagram Feed</h2>   
+                <a href="https://instagram.com/conscious_camper" target="_blank"><h2><span>@conscious_camper</span> Instagram Feed</h2></a>   
             </div>
 
             <FeedPost

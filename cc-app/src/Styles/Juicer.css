@@ -6,42 +6,34 @@
     color: #eceff4;
     border: 4px solid #b6cca4;
     border-radius: 30px;
-    padding: 10px;
-    margin-top: 10px;
     text-align: center;
-    width: 80px;
-    height: 170px;
-}
 
-.djuicer__container2
-{
-    display: flex;
-    flex-direction: column;
-    background-color: #97b67c;
-    color: #eceff4;
-    border: 4px solid #b6cca4;
-    border-radius: 30px;
     padding: 20px;
     margin-top: 10px;
-    text-align: center;
     width: 80px;
+    height: 150px;
 }
+
 .djuicer__container
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     background-color: #97b67c;
     color: #eceff4;
     border: 4px solid #b6cca4;
     border-radius: 30px;
+    text-align: center;
+
     padding: 20px;
     margin-top: 10px;
-    text-align: center;
+    width: 150px;
+    height: 150px;
 }
 
 .juicer__image
 {
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .divisor_hr
@@ -59,4 +51,9 @@
     border-left: 2px dashed #b6cca4;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.juicer__text__vert > p
+{
+    margin: -10px;
 }
