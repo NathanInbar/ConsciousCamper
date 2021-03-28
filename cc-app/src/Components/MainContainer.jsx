@@ -1,13 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import FireplaceRoundedIcon from '@material-ui/icons/FireplaceRounded';
 import Streetview from 'react-google-streetview';
 import Autocomplete from 'react-google-autocomplete';
 import '../Styles/mainContainer.css';
 
 function MainContainer() {
-    
-    return (
+    const[options, setOptions] = useState({position:{ lat: 34.3260653, lng: -117.8325833 }});
 
+    function clicked(place)
+    {
+        let pos = place.geometry.location;
+
+        setOptions({position:{ lat: pos.lat(), lng: pos.lng() }});
+    }
+
+    useState(() => {
+    }, [options]);
+
+
+    return (
+        //need a way to get the lat/lng out of the search box object
         <div className="mainContainer">
             <div className="nav__container">
                 <div className="logo__container">
@@ -17,16 +29,19 @@ function MainContainer() {
             </div>
 
             <div className="search__container">
-                {/*<input placeholder="Search" id="searchTextField" />*/}
                 <Autocomplete
                     apiKey="AIzaSyDOPCiF4znZiSiBibkiD70UfVa41OHgojQ"
+                    onPlaceSelected={(place) => {
+                        clicked(place);
+                      }}
                 />
             </div>
 
             <div className="streetView__container">
                 <div className="streetView__container__content">
                     <Streetview
-                        apiKey="AIzaSyDOPCiF4znZiSiBibkiD70UfVa41OHgojQ" 
+                        apiKey="AIzaSyDOPCiF4znZiSiBibkiD70UfVa41OHgojQ"
+                        streetViewPanoramaOptions={options} 
                     />
                 </div>
             </div>
