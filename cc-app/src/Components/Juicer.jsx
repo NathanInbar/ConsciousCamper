@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/Juicer.css';
 
-function Juicer({metric_icon, metric_name, metric_text}) {
+function Juicer({metric_icon, metric_name, data}) {
     
     return (
         <div className="juicer__container">
@@ -11,7 +11,7 @@ function Juicer({metric_icon, metric_name, metric_text}) {
 
             <div className="juicer__text">
                 <p>{metric_name}</p>
-                <p>{metric_text}</p>
+                <p>{data}</p>
             </div>
         </div>
     );

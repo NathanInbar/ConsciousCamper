@@ -3,20 +3,17 @@ import FireplaceRoundedIcon from '@material-ui/icons/FireplaceRounded';
 import Streetview from 'react-google-streetview';
 import Autocomplete from 'react-google-autocomplete';
 import '../Styles/mainContainer.css';
-
 import logo from '../assets/cc_logo.png';
-
-function MainContainer() {
-    const[options, setOptions] = useState({position:{ lat: 34.3260653, lng: -117.8325833 }});
+function MainContainer({options, setOptions}) {
 
     function clicked(place)
     {
         let pos = place.geometry.location;
-
         setOptions({position:{ lat: pos.lat(), lng: pos.lng() }});
     }
 
     useState(() => {
+        
     }, [options]);
 
 
