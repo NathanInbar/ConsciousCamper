@@ -6,6 +6,12 @@ import FilterDramaIcon from '@material-ui/icons/FilterDrama';
 import OpacityRoundedIcon from '@material-ui/icons/OpacityRounded';
 import AcUnitIcon from '@material-ui/icons/AcUnit';
 import WhatshotIcon from '@material-ui/icons/Whatshot';
+import BeachAccessIcon from '@material-ui/icons/BeachAccess';
+import Brightness5Icon from '@material-ui/icons/Brightness5';
+import CallMissedIcon from '@material-ui/icons/CallMissed';
+import EcoIcon from '@material-ui/icons/Eco';
+import EmojiFlagsIcon from '@material-ui/icons/EmojiFlags';
+
 
 import '../Styles/Juicebox.css';
 import SelectInput from '@material-ui/core/Select/SelectInput';
@@ -91,31 +97,31 @@ function JuiceBox({options, setOptions, handpicked, setHandpicked}) {
             />        
 
             <DoubleJuicer 
-            metric_icon1={<AcUnitIcon className="juicer__image"/>}
+            metric_icon1={<BeachAccessIcon className="juicer__image"/>}
             metric_name1="Chance of Rain"
             data1={parseInt(handpicked.precipitation*100) + "%"}
-            metric_icon2={<WhatshotIcon className="juicer__image"/>}
+            metric_icon2={<OpacityRoundedIcon className="juicer__image"/>}
             metric_name2="Humidity"
             data2={handpicked.humidity + "%"}
             />    
 
             <DoubleJuicer 
-            metric_icon1={<AcUnitIcon className="juicer__image"/>}
+            metric_icon1={<EcoIcon className="juicer__image"/>}
             metric_name1="Air Quality"
             data1={handpicked.AQI * 10}
-            metric_icon2={<WhatshotIcon className="juicer__image"/>}
+            metric_icon2={<CallMissedIcon className="juicer__image"/>}
             metric_name2="UV"
             data2={handpicked.UV}
             />
 
             <Juicer
-            metric_icon={<OpacityRoundedIcon className="juicer__image"/>}
+            metric_icon={<EmojiFlagsIcon className="juicer__image"/>}
             metric_name="Wind Speed"
             data={handpicked.windvelocity + " m/s"}
             />
 
             <Juicer
-            metric_icon={<FilterDramaIcon className="juicer__image"/>}
+            metric_icon={<Brightness5Icon className="juicer__image"/>}
             metric_name="Sunrise / Sunset"
             data={handpicked.sunrise}
             vertJuicer={true}
