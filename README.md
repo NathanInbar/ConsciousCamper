@@ -1,7 +1,13 @@
 # ConsciousCamper
- TuffyHacks 2021 Submission
+<p align="center">
+ TuffyHacks 2021 [24 Hour Hackathon] Submission
  By: Nathan Inbar && Justin Stitt && Alyssa Muldong
--=-=-=-=-=-=
+ </p>
+ 
+<h3 align="center">Video Presentation</h3>
+
+[<p align="center"><img src="https://img.youtube.com/vi/5gUVDYUiFUY/0.jpg"></p>](https://youtu.be/5gUVDYUiFUY)
+
 ### Inspiration
 Being trapped inside for so long due to quarantine has not been fun. When our team saw the theme was “camping” we got excited to take everyone on a virtual outdoor journey-- and what better way to do that than to promote environmental friendliness at the same time!
 
